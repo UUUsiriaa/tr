@@ -2636,7 +2636,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'Dꫀꪜꫀꪶꪮρꫀ𝘳𝘴 𝅘𝅥𝅮', callback_data="/units"},{text = 'ᥴꫝꪖꪀꪀꫀꪶ𝅘𝅥𝅯  ', callback_data="/theytry"}},   
+{{text = 'Dꫀꪜꫀꪶꪮρꫀ𝘳𝘴 𝅘𝅥𝅮', callback_data="/units"},{text = 'ᥴꫝꪖꪀꪀꫀꪶ𝅘𝅥𝅯  ', callback_data="/theytry"}},  
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/SOURCEANUBIS/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -10077,7 +10077,7 @@ keyboard.inline_keyboard = {
 {{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
 {{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
-{{text = '-𝑇𝐸𝐿𝐴𝑁𝐷 𝑇𝐸𝐴𝑀', url="t.me/TELANDTEAM"}},
+{{text = '-𝑇𝐸𝐿𝐴𝑁𝐷 ??𝐸𝐴𝑀', url="t.me/TELANDTEAM"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
