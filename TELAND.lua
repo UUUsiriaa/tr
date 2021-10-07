@@ -2627,20 +2627,20 @@ end
 end
 end,nil)   
 end
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-local url,res = https.request('https://vvvzvv.ml/apiteland/Teland.php?id='..msg.sender_user_id_)
-data = JSON.decode(url)
-if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'⌯︙شترك في قناة السورس اولآ @TELANDTEAM .')
-return false 
-end
-Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ᴛᴇʟᴀɴᴅ\n\n[⌯  ᴛᴇʟᴀɴᴅ ᴄʜᴀɴɴᴇʟ](http://t.me/TELANDTEAM)\n\n[⌯  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/vvvmh)\n\n[⌯  ᴛᴇʟᴀɴᴅ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/IMMHH)\n\n[⌯  ʙᴏᴛ ᴛᴇʟᴀɴᴅ](http://t.me/Tilllandbot)"
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
+local Text = [[
+[◍ 𝗧𝗛𝗘 𝗕𝗘𝗦𝗧 𝗘𝗚 𝗦𝗢𝗥𝗖𝗘 𝗜𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 ⶄ ](t.me/SOURCEANUBIS)
+🌖
+[◍ 𝗦𝗨𝗥𝗖𝗘 𝗔𝗡𝗨𝗕𝗜𝗦 𝗕𝗘𝗦𝗧 𝗦𝗨𝗥𝗖𝗘 𖡼 🐾](t.me/SOURCEANUBIS)
+[𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙧𝙘𝙚 𝙖𝙣𝙪𝙗𝙞𝙨 𝄵⁂︎](t.me/SOURCEANUBIS)
+]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⌯ sᴏᴜʀᴄʀ ᴛᴇʟᴀɴᴅ',url="t.me/TELANDTEAM/3"}},
+{{text = 'Dꫀꪜꫀꪶꪮρꫀ𝘳𝘴 𝅘𝅥𝅮', callback_data="/units"},{text = 'ᥴꫝꪖꪀꪀꫀꪶ𝅘𝅥𝅯  ', callback_data="/theytry"}},   
+{{text = '♪ اضغط لاضافه البوت لمجمعتك •' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/TELANDTEAM&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/SOURCEANUBIS/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
@@ -9541,30 +9541,6 @@ if text == 'تغير امر م10' and DevTELANDW(msg) then
 send(msg.chat_id_, msg.id_, ' *⌯︙الان يمكنك ارسال الكليشه م10*')
 database:set(bot_id..'help10'..msg.sender_user_id_,'true')
 return false 
-end
-
-if text == 'الالعاب' then
-local Text = [[
- مـرحـبـا بـك عـزيزي 
- فـي قسـم الالعـاب 
- ستجـد كل اوامـر التـسليـه لك 
- بالأسفل فقط اضغط علي الزر√
- 
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '♪العاب السورس♪', callback_data="/mute-name"},{text = '♪الاضافات♪', callback_data="/change-photo"},
-},
-{
-{text = '♪ متطوره♪', callback_data="/DRG"},
-},
-{
-{text = '⇣ 𝙰𝙽𝚄𝙱𝙸𝚂 ⇣', url="t.me/SOURCEANUBIS"},
-},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/hjatwklas/6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'الاوامر' and Mod(msg) then
